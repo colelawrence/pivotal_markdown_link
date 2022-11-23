@@ -1,15 +1,17 @@
-Pivotal Markdown Link (PMDL)
+Pivotal Markdown Link (Cole's Style)
 ======
 
-### 📖 WHAT IS IT
+### 📖 Demo
+
+![Demo](./demo.gif)
 
 PMDL is a Browser [Content Script Extension](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts) that places a few extra buttons into a [Pivotal Tracker](pivotaltracker.com) story card.
 
-### 🚀 GET IT
+### 🚀 Usage
 
-The extension is available on the Chrome App Store. [Get it here!](https://chrome.google.com/webstore/detail/pivotal-markdown-link/kaegggniajpipbdjkhhmemjnilebjjpn)
+The extension can be cloned and loaded unpacked into your extensions without any build steps.
 
-### 🔎 EXAMPLE
+### 🔎 Example
 
 ![The best story in the world](https://cloud.githubusercontent.com/assets/442279/24854149/8e1922e6-1e07-11e7-89e4-2e3814b34bc7.png)
 
@@ -18,11 +20,11 @@ Clicking the button will copy a markdown link to the story to your clipboard and
 Produces markdown links in the following format
 
 ```md
-[{{ID}}]({{URL}}) {{NAME}}
+[PT{{ID}}: "{{NAME}}"]({{URL}})
 ```
 
 For instance
 
 ```md
-[#1337](https://www.pivotaltracker.com/story/show/1337) The best story in the world
+[PT1337: "The best story in the world"](https://www.pivotaltracker.com/story/show/1337)
 ```
